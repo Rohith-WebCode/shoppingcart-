@@ -5,7 +5,7 @@ import cross_icon from '../../assets/cart_cross_icon.png'
 const Orders = () => {
   const [allOrders,setallOrders] = useState([])
   const FeachInfo = async ()=>{
-    await fetch('http://localhost:4000/orders')
+    await fetch('https://shoppingcart-backend-spal.onrender.com/orders')
     .then((res)=>res.json())
     .then((data)=>{setallOrders(data)});
   }
@@ -18,7 +18,7 @@ const Orders = () => {
     try {
         console.log('Removing order with ID:', id);
 
-        const response = await fetch('http://localhost:4000/removeorder', {
+        const response = await fetch('https://shoppingcart-backend-spal.onrender.com/removeorder', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
