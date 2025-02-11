@@ -100,7 +100,7 @@ export const Orders = () => {
         } 
         else{
             try {
-                const response = await fetch("http://localhost:4000/placeorder", {
+                const response = await fetch("https://shoppingcart-backend-spal.onrender.com/placeorder", {
                  method: "POST",
                  headers: {
                         "Accept": "application/json",
