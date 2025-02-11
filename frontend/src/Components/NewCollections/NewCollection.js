@@ -5,7 +5,7 @@ import Item from '../items/item'
 function NewCollection() {
   const [new_collection,setNewCollection]=useState([]);
   useEffect(()=>{
-    fetch('http://localhost:4000/newcollection')
+    fetch('https://shoppingcart-backend-spal.onrender.com/newcollection')
     .then((res)=>res.json())
     .then((data)=>setNewCollection(data));
   },[])
