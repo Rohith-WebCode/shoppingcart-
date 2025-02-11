@@ -18,7 +18,7 @@ function Product() {
   useEffect(() => {
     const fetchProductData = async () => {
       try {
-        const response = await fetch('http://localhost:4000/ProductDisplay', {
+        const response = await fetch('https://shoppingcart-backend-spal.onrender.com/ProductDisplay', {
           method: 'POST',
           headers: {
             Accept: 'application/form-data',
