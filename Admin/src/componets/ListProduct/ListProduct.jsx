@@ -5,7 +5,7 @@ import cross_icon from '../../assets/cart_cross_icon.png'
 const ListProduct = () => {
   const [allproducts,setallproducts] = useState([])
   const FeachInfo = async ()=>{
-    await fetch('http://localhost:4000/allproducts')
+    await fetch('https://shoppingcart-backend-spal.onrender.com/allproducts')
     .then((res)=>res.json())
     .then((data)=>{setallproducts(data)});
   }
@@ -15,7 +15,7 @@ const ListProduct = () => {
   },[])
 
   const removeProduct = async (id)=>{
-    await fetch('http://localhost:4000/removeproduct',{
+    await fetch('https://shoppingcart-backend-spal.onrender.com/removeproduct',{
       method:'POST',
       headers:{
         Accept:'application/json',
