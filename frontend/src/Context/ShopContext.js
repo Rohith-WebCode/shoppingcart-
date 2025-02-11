@@ -22,12 +22,12 @@ const ShopContextProvider = (props)=>{
     });
 
     useEffect(()=>{
-        fetch('http://localhost:4000/allproducts')
+        fetch('https://shoppingcart-backend-spal.onrender.com/allproducts')
         .then((res)=>res.json())
         .then((data)=>setall_product(data))
         
         if(localStorage.getItem('auth-token')){
-            fetch('http://localhost:4000/getcart',{
+            fetch('https://shoppingcart-backend-spal.onrender.com/getcart',{
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',
@@ -48,7 +48,7 @@ const ShopContextProvider = (props)=>{
             if (token) {
                 try {
                     // console.log("Fetching user with token:", token);
-                    const response = await fetch("http://localhost:4000/getuser", {
+                    const response = await fetch("https://shoppingcart-backend-spal.onrender.com/getuser", {
                         method: "POST",
                         headers: {
                             Accept: "application/json",
@@ -92,7 +92,7 @@ const ShopContextProvider = (props)=>{
         }));
     
         if (localStorage.getItem("auth-token")) {
-            fetch("http://localhost:4000/addtoCart", {
+            fetch("https://shoppingcart-backend-spal.onrender.com/addtoCart", {
                 method: "POST",
                 headers: {
                     Accept: "application/json",
@@ -121,7 +121,7 @@ const ShopContextProvider = (props)=>{
             return updatedCart;
         });
     
-        fetch("http://localhost:4000/removeFromCart", {
+        fetch("https://shoppingcart-backend-spal.onrender.com/removeFromCart", {
             method: "POST",
             headers: {
                 Accept: "application/json",
@@ -156,7 +156,7 @@ const ShopContextProvider = (props)=>{
             return updatedCart;
         });
     
-        fetch("http://localhost:4000/clearFromCart", {
+        fetch("https://shoppingcart-backend-spal.onrender.com/clearFromCart", {
             method: "POST",
             headers: {
                 Accept: "application/json",
@@ -185,7 +185,7 @@ const ShopContextProvider = (props)=>{
         if (!query.trim()) return; // Prevent empty searches
     
         try {
-            const response = await fetch(`http://localhost:4000/search?query=${query}`);
+            const response = await fetch(`https://shoppingcart-backend-spal.onrender.com/search?query=${query}`);
             const data = await response.json();
     
             if (response.ok) {
