@@ -7,7 +7,7 @@ function Relatedproducts(props) {
   const {product} = props;
   const [data_product,setdata_product] = useState([])
   useEffect(()=>{
-    fetch('http://localhost:4000/relatedproducts',{
+    fetch('https://shoppingcart-backend-spal.onrender.com/relatedproducts',{
       method:'POST',
       headers:{
           Accept:'application/form-data',
