@@ -1,0 +1,227 @@
+.CartItems{
+    margin: 60px 50px;
+}
+.CartItems hr{
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+}
+.CartItems-format-main{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0px;
+    color: #454545;
+    font-size: 15px;
+    font-weight: 600;
+}
+.total{
+    margin-left: 9px;
+
+}
+.CartItems-format{
+    font-size: 17px;
+    font-weight: 500;
+}
+.carticon-product-icon{
+    height: 62px;
+
+}
+.CartItems-remove-icon{
+    width: 15px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+.CartItems-quantity{
+    width: 45px;
+    height: 30px;
+    border: 2px solid #ebebeb;
+    background: #fff;
+}
+.CartItems-down{
+    display: flex;
+    margin: 100px 0px;
+}
+.CartItems-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
+}
+.CartItems-total-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+.CartItems-total button{
+    width: 262px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: #ff5a5a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.CartItems-promocode{
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+}
+.CartItems-promocode p{
+    color: #555;
+}
+.promobox{
+    width: 504px;
+    margin-top: 15px;
+    padding-left: 20px;
+    height: 58px;
+    background: #eaeaea;
+}
+.promobox input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    width: 330px;
+    height: 50px;
+}
+.promobox button{
+    width: 170px;
+    height: 58px;
+    font-size: 16px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+.quantity{
+    display: flex;
+}
+.quantity-minus {
+    margin: 3px;
+    width: 24px;
+    height: 25px;
+    background: linear-gradient(#fff, #f9f9f9);
+    display: inline-block;
+    border: 1px solid #c2c2c2;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50%;
+    padding-top: 1px;
+    padding-bottom: 4px;
+    line-height: 1;
+   
+}
+.quantity-plus{
+    margin: 3px;
+    width: 24px;
+    height: 25px;
+    background: linear-gradient(#fff, #f9f9f9);
+    display: inline-block;
+    border: 1px solid #c2c2c2;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50%;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    line-height: 1;
+}
+.Remove{
+    display: none;
+}
+@media (max-width:1280px) {
+    .CartItems{
+        margin: 60px 50px;
+    }
+    .CartItems-format-main{
+        grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 20px;
+        padding: 15px 0px;
+        font-size: 15px;
+
+    }
+    .carticon-product-icon{
+        height: 100px;
+    }
+   .CartItems-remove-icon{
+    margin: auto;
+
+   }
+   .CartItems-quantity{
+    width: 40px;
+    height: 30px;
+   }
+   .quantity-minus {
+    margin: 4px;
+    width: 24px;
+    height: 24px;
+    padding-top: 0px;
+   
+}
+.quantity-plus{
+    margin: 4px;
+    width: 24px;
+    height: 24px;
+    padding-top: 0px;
+}
+.CartItems-down{
+    margin: 80px 0px;
+    flex-direction: column;
+    gap: 80px;
+}
+.CartItems-total{
+    margin: 0px;
+}
+.CartItems-total button{
+   max-width: 200px;
+   height: 45px;
+   font-size: 13px;
+}
+.promobox{
+    width: auto;
+    max-width: 500px;
+}
+.promobox input{
+    width: 100%;
+}
+.promobox button{
+    width: 120px;
+    margin-left: -120px;
+}
+    
+}
+@media (max-width:800px) {
+    .CartItems-format-main{
+        display: none;
+        grid-template-columns: 0.5fr 3fr ;
+        gap: 10px;
+    }
+    .CartItems-format{
+        display: grid;
+    }
+    .CartItems-remove-icon {
+        display: none;
+    }
+    .carticon-product-icon{
+        height: 100px;
+    }
+    .Remove{
+        display: block;
+        display: inline-block;
+        text-transform: uppercase;
+        box-shadow: none;
+        outline: 0;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-right: 25px;
+    
+    }
+    .Remove:hover{
+        color:#e2e2e2;
+    }
+
+}

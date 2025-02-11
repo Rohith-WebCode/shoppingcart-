@@ -1,0 +1,431 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    padding-top: 30px;
+    box-shadow: 0 -3px 9px -2px black;
+    align-items: center;
+
+}
+.sidenav li {
+    display: none;
+  }
+.login-cart{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #626262;
+    font-size: 8px;
+    font-weight: 500;
+}
+.login-cart h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 160px;
+}
+.menu-Logo {
+  display: none;
+}
+.ProfileLogo{
+    width: 16px;
+    padding-left: 7px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  } 
+
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    margin-left: -96px;
+    background-color: white;
+    padding: 10px;
+    min-width: 138px;
+    border-radius: 3px;
+    height: 119px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  /* .dropdown-content a{
+    color: black;
+    font-size: 12px;
+    padding: 8px 0px;
+    text-decoration: none;
+    display: block;
+
+  } */
+  .dropdown-content h2{
+    color: #3e4152;
+    font-size: 13px;
+    align-items: baseline;
+  }
+ 
+  .dropdown-content p{
+    color: #282c3f;
+    font-size: 11px;
+}
+.username{
+    color: #3e4152;
+    font-size: 13px;
+    align-items: baseline;
+  }
+.usernameDiv{
+    display: flex;
+    gap: 5px;
+}
+.usernameDiv h2{
+    font-size: 12px;
+}
+.usernameDiv p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #626262;
+}
+.Login-SignUp{
+    width: 100px;
+    height: 32px;
+    outline: none;
+    border: 1px solid #eaeaec;
+    border-radius: 4px;
+    color: #ff3f6c;
+    font-size: 12px;
+    font-weight: 700;
+    background: white;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 13px;
+}
+.Login-SignUp:hover{
+    border: 1px solid #ff3f6c;
+
+}
+.Login-SignUp:active{
+    background: #f3f3f3;
+
+}
+.Logout{
+    width: 100px;
+    height: 32px;
+    outline: none;
+    border: 1px solid #eaeaec;
+    border-radius: 4px;
+    color: #ff3f6c;
+    font-size: 12px;
+    font-weight: 700;
+    background: white;
+    cursor: pointer;
+    margin-top: 28px;
+    margin-left: 13px;
+}
+
+.Logout:hover{
+    border: 1px solid #ff3f6c;
+
+}
+.Logout:active{
+    background: #f3f3f3;
+
+}
+
+.dropdown:hover .dropdown-content{
+     display: block;
+     }
+
+.CartLogo{
+    width: 30px;
+    
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #626262;
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.submit{
+    box-sizing: content-box;
+    display: inline-block;
+    height: 28px;
+    width: 40px;
+    text-align: center;
+    padding: 8px 0 2px;
+    border: 1px solid #f5f5f6;
+    background: #f5f5f6;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+    left: -41px;
+}
+.Searchicon{
+    width: 10px;
+}
+.input {
+    display: inline-block;
+    float:left;
+    font-size: 14px;
+    height: 20px;
+    line-height: 24px;
+    color: #696e79;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 8px 10px 10px;
+    margin: 0;
+    outline: 0;
+    border: 1px solid #f5f5f6;
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+    background: #f5f5f6;
+    width: 95%;
+    overflow: visible;
+}
+.Search{
+    float: right;
+    position: relative;
+    width: 32%;
+    margin: 8px 20px 0px 40px;
+}
+.nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #ff4141;
+}
+.nav-cart-count{
+    width: 16px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -22px;
+    margin-left: 15px;
+    border-radius: 11px;
+    font-size: 10px;
+    background: red;
+    color: white;
+
+}
+.new-dropdown{
+    display: none;
+}
+.Search-menu{
+    display: none;
+
+}
+.Search :focus{
+    background: #fff;
+}
+@media (max-width:1280px) {
+    .navbar{
+        padding: 12px 50px;
+    }
+    .nav-logo img{
+        width: 70px;
+        padding: 14px;
+    }
+    .nav-menu{
+        gap: 30px;
+        font-size: 16px;
+    }
+    .Search{
+        width: 230px;
+    
+    }
+    .Search input::placeholder{
+       font-size: 10px;
+    }
+    .login-cart{
+        gap: 30px;
+        font-size: 6px;
+    }
+    
+    .ProfileLogo{
+        width: 14px;
+        padding-left: 9px;
+    }
+    .nav-cart-count {
+        width: 11px;
+        height: 11px;
+        margin-top: -14px;
+        font-size: 8px;
+    }
+
+  
+}
+@media (max-width:1024px) {
+    .navbar{
+        padding: 12px 30px;
+    }
+    .nav-menu{
+        gap: 25px;
+        font-size: 14px;
+    }
+  
+}
+@media (max-width:850px) {
+    .navbar{
+        padding: 10px 0px;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .new-dropdown{
+        display: block;
+        width: 25px;
+    
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav li {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        cursor: pointer;
+        
+      }  
+      .mySidenav{
+        width :250px;
+        
+    }
+   .menu-Logo {
+    display:block;
+    width: 110px;
+    padding: 10px 0px 15px 31px;
+}
+  .dropdown-content{
+    margin-left: -66px;
+    min-width: 120px;
+    height: 80px;
+  }
+  .dropdown-content h2{
+    font-size: 10px;
+  }
+ 
+  .dropdown-content p{
+    color: #282c3f;
+    font-size: 7px;
+}
+.Login-SignUp{
+    width: 70px;
+    height: 26px;
+    font-size: 7px;
+    margin-top: 8px;
+    margin-left: 4px;
+
+}
+}
+
+@media (max-width:500px) {
+    .navbar{
+        padding: 8px 0px 60px 0px;
+        gap: 0;
+
+    }
+    /* .Logo{
+        transform: scale(0.8);
+    }
+     */
+     .Search{
+        display: none;
+    
+    }
+    .Search-menu{
+        display: block;
+        position: absolute;
+        width: 72%;
+        margin: 100px 0px 0px 39px;
+
+    }
+    .Search-menu :focus{
+        background: #fff;
+    }
+    .login-cart{
+        gap: 25px;
+        font-size: 4px;
+    }
+    
+    .ProfileLogo{
+        width: 14px;
+        padding-left: 2px;
+    }
+    .nav-cart-count {
+        width: 11px;
+        height: 12px;
+        margin-top: -14px;
+        font-size: 7px;
+    }
+    .Search-menu input::placeholder{
+        font-size: 8px;
+     }
+     /* .dropdown-content{
+        margin-top: 0px;
+        min-width: 139px;
+        height: 170px;
+      } */
+      /* .dropdown-content a{
+        font-size: 10px;
+        padding: 12px 16px;
+      } */
+      .dropdown-content h2{
+        font-size: 10px;
+      }
+     
+      .dropdown-content p{
+        font-size: 7px;
+    }
+    /* .Login-SignUp{
+        width: 70px;
+        height: 26px;
+        font-size: 7px;
+        margin-top: 2px;
+        margin-left: -6px;
+    
+    } */
+
+
+}
+

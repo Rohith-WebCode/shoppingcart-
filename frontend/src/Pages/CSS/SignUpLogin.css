@@ -1,0 +1,146 @@
+.SignUpLogin{
+    width: 100%;
+    height: 90vh;
+    background: #fce3fe;
+    padding-top: 100px;
+}
+.SignUpLogin-Container{
+    width: 450px;
+    height: 540px;
+    background: white;
+    margin: auto;
+    padding: 40px 60px;
+    border-radius: 11px;
+    border: 1px solid #ebebeb;
+
+}
+.SignUpLogin-Container h1{
+    margin: 20px 0px;
+}
+.SignUpLogin-Fields{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 30px;
+}
+.SignUpLogin-Fields input{
+    height: 50px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color:#5c5c5c;
+    font-size: 18px;
+}
+.SignUpLogin-Container button{
+    width: 473px;
+    height: 72px;
+    color: white;
+    background: #ff4141;
+    margin-top: 30px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.SignUpLogin-login{
+    margin-top: 20px;
+    color: #5c5c5c;
+    font-size: 16px;
+    font-weight: 500;
+}
+.SignUpLogin-login span{
+    color: #ff4141;
+    font-weight: 600;
+}
+.SignUpLogin-agree{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    color: #5c5c5c;
+    font-size: 16px;
+    font-weight: 500;
+}
+@media (max-width:1280px) {
+    .SignUpLogin{
+        padding-top: 50px;
+    }
+    .SignUpLogin-Container{
+        width: auto;
+        max-width: 500px;
+        max-height: 500px;
+    }
+    .SignUpLogin-Container h1{
+        margin: 10px 0px;
+    }
+    .SignUpLogin-Fields{
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .SignUpLogin-Fields input{
+        height: 65px;
+        width: 93%;
+    }
+    .SignUpLogin-Container button{
+        width: 98%;
+    }
+    .SignUpLogin-login{
+        font-size: 16px;
+    }
+    .SignUpLogin-agree{
+        font-size: 14px;
+        gap: 10px;
+    }
+}
+@media (max-width:800px) {
+    .SignUpLogin-Container{
+       padding: 20px 30px;
+    }
+    .SignUpLogin-Container h1{
+       font-size: 24px;
+    }
+    .SignUpLogin-Fields{
+        margin-top: 20px;
+    }
+    .SignUpLogin-Fields input{
+        height: 50px;
+    }
+    .SignUpLogin-Container button{
+        height: 50px;
+        font-size: 16px;
+    }
+  
+}
+ @media (max-width:500px) {
+
+    .SignUpLogin{
+        padding-top: 50px;
+    }
+    .SignUpLogin-Container{
+        padding: 20px 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+        height: 412px;
+     }
+     .SignUpLogin-Container h1{
+        font-size: 22px;
+     }
+     .SignUpLogin-Container button {
+        width: 100%;
+    }
+    .SignUpLogin-Fields input{
+        width: 93%;
+        height: 39px;
+        font-size: 14px;
+    }
+    .SignUpLogin-login{
+        font-size: 14px;
+    }
+    .SignUpLogin-agree{
+        font-size: 10px;
+        gap: 10px;
+    }
+
+    
+} 
