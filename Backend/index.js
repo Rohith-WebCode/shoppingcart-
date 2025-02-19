@@ -346,6 +346,7 @@ app.post('/getcart',fetchuser,async(req,res)=>{
     let userData = await User.findOne({_id:req.user.id});     
     res.json(userData.cartData); 
 })
+
 app.post('/ProductDisplay',async(req,res)=>{
     console.log('ProductDisplay');
     let productData = await Product.findOne({id:req.body.id});
@@ -436,8 +437,6 @@ app.post('/placeorder',fetchuser,async (req,res)=>{
 
 // Search route
 app.get("/search", async (req, res) => {
-    console.log("hi");
-    
     try {
         const { query } = req.query; 
         if (!query) {

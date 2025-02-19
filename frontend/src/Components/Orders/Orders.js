@@ -24,7 +24,7 @@ export const Orders = () => {
             return String (p.id) === itemId; // ✅ Proper condition
         });
 
-        // console.log('Found product:', product);
+        console.log('Found product:', product);
           orderItems.push({
               product: itemId, // ✅ MongoDB Product ID
               name: product?.name || "Unknown Product", // ✅ Add product name
@@ -89,6 +89,8 @@ export const Orders = () => {
         return false;
     }
     if (OrderDetails.orderItems.length === 0) {
+        console.log(OrderDetails.orderItems);
+        
         alert("Your cart is empty. Please add items before ordering.");
         return false;
     }
