@@ -115,7 +115,7 @@ export const Orders = () => {
                 if (response.ok && responseData.success) {
                     console.log("Order Placed Successfully!");
                     setOrderSuccess(true); 
-                    setTimeout(() => setOrderSuccess(false), 4000);
+                     setTimeout(() => setOrderSuccess(false), 4000);
                 } else {
                     alert(responseData.error || "Failed to place order");
                 }
@@ -128,11 +128,12 @@ export const Orders = () => {
   return (
     <>
     {orderSuccess ? (
-        <div className="order-success">
-            <img src={Gif} 
-                alt="Order Success" 
-                className="success-gif" width={"100%"}/>
-        </div>
+      <div className="order-success">
+        <div className="order-box">
+            <img src={Gif} alt="Order Success" className="success-gif"/>
+         </div>
+     </div>
+ 
     ) :(
     <div className='Orders'>
         <div className='header-section'>
